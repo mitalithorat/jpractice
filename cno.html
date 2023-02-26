@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery1.js"></script>
+    <script>
+        maxlength=0;
+$(function(){
+ $("#mno").keypress(function(){
+    c=10;
+    var l=$("#mno").val().length;
+     $("span").text(c-l+"number left");
+ });
+})
+    </script>
+</head>
+<body>
+    
+    <form>
+        enter fname<input type="text" id="fname" required><br><br>
+        enter lname<input type="text" id="lname" required><br><br>
+        enter mno<input type="text" id="mno" maxlength="10">
+        <span></span>
+    </form>
+</body>
+</html>
+<form>
+    <!-- <label>maxi 15 ch</label>
+    <textarea id="textarea" maxlength="15"></textarea>
+    <button>15</button>
+        </form>   -->
